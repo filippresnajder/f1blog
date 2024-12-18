@@ -20,12 +20,13 @@ export default defineComponent({
       >
     </div>
     <div class="bg-red-700 text-white text-center">
-      <h1 class="p-2">{{ data.name }}</h1>
+      <h1 class="font-formula p-2">
+        {{ data.name }}
+      </h1>
     </div>
   </div>
   </router-link>
 </template>
 
 <style scoped>
-
 </style>

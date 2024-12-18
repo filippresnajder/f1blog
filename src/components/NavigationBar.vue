@@ -10,13 +10,14 @@ export default defineComponent({
   <nav class="fixed top-0 w-full bg-red-900 z-50">
     <div class="flex flex-col items-center justify-center">
       <router-link :to="{name: 'home'}">
-        <img class="w-24"
-             src="../assets/img/f1-logo.jpg"
-             alt="f1logo"
+        <img
+          class="w-24"
+          src="../assets/img/f1-logo.jpg"
+          alt="f1logo"
         >
       </router-link>
       <div class="flex items-center justify-center w-full bg-red-700">
-        <ul class="flex gap-10 text-white uppercase font-medium">
+        <ul class="flex gap-5 lg:gap-10 text-white uppercase font-formula text-xs lg:text-sm">
           <li class="py-2">
             <router-link :to="{name: 'home'}">
               Home
@@ -44,5 +45,4 @@ export default defineComponent({
 </template>
 
 <style scoped>
-
 </style>

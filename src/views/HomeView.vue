@@ -29,3 +29,6 @@ export default defineComponent({
     </div>
   </main>
 </template>
+
+<style scoped>
+</style>

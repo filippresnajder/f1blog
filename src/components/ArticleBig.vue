@@ -19,7 +19,7 @@ export default defineComponent({
           :alt="this.data.slug"
         >
       </div>
-      <p class="p-2 bg-red-700 text-xl">
+      <p class="font-formula p-2 bg-red-700 text-md">
         {{ this.data.title }}
       </p>
     </router-link>
@@ -27,5 +27,4 @@ export default defineComponent({
 </template>
 
 <style scoped>
-
 </style>

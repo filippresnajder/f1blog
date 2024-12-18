@@ -12,8 +12,10 @@ export default defineComponent({
 <template>
   <router-link :to="{ name: 'track', params: { slug: this.data.slug }}">
     <div class="w-96 overflow-hidden border border-gray-200 rounded-md h-auto text-white cursor-pointer">
-      <div class="bg-red-700 text-white text-center">
-        <h1 class="p-2">Round No. {{ this.data.id }}</h1>
+      <div class="font-formula bg-red-700 text-white text-center">
+        <h1 class="p-2">
+          Round No. {{ this.data.id }}
+        </h1>
       </div>
       <div class="relative w-full h-52 overflow-hidden">
         <img
@@ -23,12 +25,13 @@ export default defineComponent({
         >
       </div>
       <div class="bg-red-700 text-white text-center">
-        <h1 class="p-2">{{ this.data.name }}</h1>
+        <h1 class="font-formula p-2">
+          {{ this.data.name }}
+        </h1>
       </div>
     </div>
   </router-link>
 </template>
 
 <style scoped>
-
 </style>

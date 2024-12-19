@@ -14,44 +14,52 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
+      meta: { title: 'Home' },
       component: HomeView,
     },
     {
       path: '/drivers',
       name: 'drivers',
+      meta: { title: 'Drivers' },
       component: DriversView,
     },
     {
       path: '/drivers/:slug',
       name: 'driver',
+      meta: { title: 'Drivers' },
       component: DriverView,
       props: true
     },
     {
       path: '/teams',
       name: 'teams',
+      meta: { title: 'Teams' },
       component: TeamView,
     },
     {
       path: '/calendar',
       name: 'calendar',
+      meta: { title: 'Calendar' },
       component: CalendarView,
     },
     {
       path: '/calendar/:slug',
       name: 'track',
+      meta: { title: 'Calendar' },
       component: TrackView,
       props: true
     },
     {
       path: '/articles/:slug',
       name: 'article',
+      meta: { title: 'Article' },
       component: ArticleView,
       props: true
     },
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
+      meta: { title: 'Not Found' },
       component: NotFound
     }
     /*{
@@ -68,5 +76,10 @@ const router = createRouter({
     return { top: 0 }
   },
 })
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
+  next();
+});
 
 export default router

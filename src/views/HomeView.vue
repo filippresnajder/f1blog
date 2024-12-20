@@ -19,11 +19,18 @@ export default defineComponent({
 
 <template>
   <main>
-    <div v-for="article in big_articles" :key="article.id" class="flex items-center justify-center mt-32">
+    <div
+      v-for="article in big_articles"
+      :key="article.id"
+      :class="'flex items-center justify-center mt-32'"
+    >
       <ArticleBig :data="article"/>
     </div>
     <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-60 gap-y-10 place-items-center mt-6 max-w-screen-sm mx-auto">
-      <div v-for="article in small_articles" :key="article.id">
+      <div
+        v-for="article in small_articles"
+        :key="article.id"
+      >
         <ArticleSmall :data="article"/>
       </div>
     </div>

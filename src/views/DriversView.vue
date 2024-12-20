@@ -16,7 +16,10 @@ export default defineComponent({
 
 <template>
   <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-32 gap-y-10 place-items-center mt-32 max-w-screen-lg mx-auto">
-    <div v-for="driver in drivers" :key="driver.id">
+    <div
+      v-for="driver in drivers"
+      :key="driver.id"
+    >
       <CardDriver :data="driver"/>
     </div>
   </div>

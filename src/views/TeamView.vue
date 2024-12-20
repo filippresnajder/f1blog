@@ -16,7 +16,10 @@ export default defineComponent({
 
 <template>
   <main class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-10 place-items-center mt-32 max-w-screen-sm mx-auto">
-    <div v-for="team in teams" :key="team.id">
+    <div
+      v-for="team in teams"
+      :key="team.id"
+    >
       <CardTeam :data="team" />
     </div>
   </main>

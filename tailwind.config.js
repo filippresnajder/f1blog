@@ -3,6 +3,7 @@ export default {
   content: [
     './public/**/*.html',
     './src/**/*.{js,jsx,ts,tsx,vue}',
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {},
@@ -10,5 +11,7 @@ export default {
       formula: ["F1", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    import('flowbite/plugin')
+  ],
 }

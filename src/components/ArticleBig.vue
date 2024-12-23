@@ -10,7 +10,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="min-w-80 w-6/12 overflow-hidden border-2 border-gray-300 rounded-sm h-auto text-white cursor-pointer">
+  <div class="min-w-80 w-6/12 max-w-3xl overflow-hidden border-2 border-gray-300 rounded-sm h-auto text-white cursor-pointer">
     <router-link :to="{ name: 'article', params: { slug: this.data.slug }}">
       <div class="relative w-full h-96 overflow-hidden">
         <img

@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-<div class="font-formula w-full bg-red-700 text-white text-center text-sm font-light mt-8 p-3">
+<div class="font-formula w-full bg-red-700 text-white text-center text-sm font-light mt-12 p-3">
   <p class="p-1">
     Formula 1 Blog
   </p>

@@ -1,38 +1,52 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { useDriverStore } from '@/stores/driver.ts'
+import {useTeamStore} from "@/stores/team.ts";
+import CardTeam from "@/components/CardTeam.vue";
 
 export default defineComponent({
   name: 'DriverView',
+  components: {CardTeam},
   props: {
     slug: String,
   },
   data() {
     return {
       driverStore: useDriverStore(),
+      teamStore: useTeamStore()
     }
   },
   computed: {
     driverData() {
       return this.driverStore.data
     },
-    found() {
+    driver_found() {
       return this.driverStore.found
+    },
+    teamData() {
+      return this.teamStore.data
+    },
+    team_found() {
+      return this.teamStore.found
     }
   },
   mounted() {
     this.fetchData(this.slug)
+    this.fetchTeamData(this.driverData.team_slug)
   },
   methods: {
     fetchData(slug: string) {
       this.driverStore.fetchDataBySlug(slug)
     },
+    fetchTeamData(slug: string)  {
+      this.teamStore.fetchDataBySlug(slug)
+    }
   },
 })
 </script>
 
 <template>
-  <div v-if="this.found">
+  <div v-if="this.driver_found">
     <main class="flex flex-col justify-center items-center mt-20 font-formula">
       <div class="w-6-12 flex flex-col justify-center items-center">
         <p class="text-2xl mt-10">
@@ -81,6 +95,15 @@ export default defineComponent({
               Points: {{ this.driverData.points }}
             </p>
           </div>
+        </div>
+      </div>
+      <div v-if="this.team_found">
+        <div class="w-6-12 flex flex-col justify-center items-center">
+          <p class="text-2xl mt-10">
+            Driver Team
+          </p>
+          <div class="w-full h-1 bg-red-700 mt-2"></div>
+            <CardTeam :data ="this.teamData"/>
         </div>
       </div>
     </main>

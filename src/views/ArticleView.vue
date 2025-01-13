@@ -1,9 +1,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { useArticleStore } from '@/stores/article.ts'
+import ArticleSmall from "@/components/ArticleSmall.vue";
 
 export default defineComponent({
   name: 'ArticleView',
+  components: {ArticleSmall},
   props: {
     slug: String,
   },
@@ -18,11 +20,15 @@ export default defineComponent({
     },
     found() {
       return this.articleStore.found
+    },
+    nextArticle() {
+      return this.articleStore.nextArticle
     }
   },
   mounted() {
     this.fetchData(this.slug)
     this.incrementReads(this.slug)
+    this.getNextArticle(this.slug)
   },
   methods: {
     fetchData(slug: string) {
@@ -30,8 +36,18 @@ export default defineComponent({
     },
     incrementReads(slug: string) {
       this.articleStore.incrementReads(slug)
+    },
+    getNextArticle(slug: string) {
+      this.articleStore.getNextArticle(slug)
     }
   },
+  watch: {
+    slug(new_slug) {
+      this.fetchData(new_slug)
+      this.incrementReads(new_slug)
+      this.getNextArticle(new_slug)
+    }
+  }
 })
 </script>
 
@@ -74,6 +90,14 @@ export default defineComponent({
           <p class="text-gray-600">
             You have read this article {{ this.articleStore.getReadCount(this.slug) }} times.
           </p>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <p class="text-2xl">
+          Read more
+        </p>
+        <div class="mt-6">
+          <ArticleSmall :data="this.nextArticle"/>
         </div>
       </div>
     </main>

@@ -14,6 +14,7 @@
       "points": 3023.5,
       "biography": "Born on 30th September 1997. Max Verstappen currently drivers for Red Bull Racing. His F1 career started in 2015 at only 17 years of age. He is a son of former F1 driver Jos Verstappen and he is regarded as one of the best drivers to ever grace the sport despite his young age.",
       "slug": "verstappen",
+      "team_slug": "red_bull",
       "number": 1
     },
     {
@@ -30,6 +31,7 @@
       "points": 6,
       "biography": "Born on 11th February 2002 in New Zealand. He made his first F1 appearance substituting for the injured Daniel Ricciardo in the 2023 Dutch Grand Prix and later replacing him as a full-time driver at the 2024 United States Grand Prix. Despite his small amounts of experience, he got quickly up to speed and is set to replace struggling Sergio Perez in Red Bull for 2025. ",
       "slug": "lawson",
+      "team_slug": "red_bull",
       "number": 40
     },
     {
@@ -46,6 +48,7 @@
       "points": 1007,
       "biography": "Lando Norris (born 13 November 1999) is a British racing driver, who competes in Formula One for McLaren. Norris was runner-up in the Formula One World Drivers' Championship in 2024 with McLaren, and has won four Grands Prix across six seasons.",
       "slug": "norris",
+      "team_slug": "mclaren",
       "number": 4
     },
     {
@@ -62,6 +65,7 @@
       "points": 389,
       "biography": "Oscar Jack Piastri (born 6 April 2001) is an Australian racing driver, who competes in Formula One for McLaren. Piastri has won two Formula One Grands Prix across two seasons.",
       "slug": "piastri",
+      "team_slug": "mclaren",
       "number": 81
     },
     {
@@ -78,6 +82,7 @@
       "points": 1430,
       "biography": "Charles Marc Hervé Perceval Leclerc (born 16 October 1997) is a Monégasque racing driver, who competes in Formula One for Ferrari. Leclerc was runner-up in the Formula One World Drivers' Championship in 2022 with Ferrari, and has won eight Grands Prix across seven seasons.",
       "slug": "leclerc",
+      "team_slug": "ferrari",
       "number": 16
     },
     {
@@ -94,6 +99,7 @@
       "points": 4862.5,
       "biography": "Sir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British racing driver, who is set to compete for Ferrari. Hamilton has won a joint-record seven Formula One World Drivers' Championship titles—tied with Michael Schumacher—and holds the records for most wins (105), pole positions (104), and podium finishes (202), among others.",
       "slug": "hamilton",
+      "team_slug": "ferrari",
       "number": 44
     },
     {
@@ -110,6 +116,7 @@
       "points": 714,
       "biography": "George William Russell (born 15 February 1998) is a British racing driver, who competes in Formula One for Mercedes. Russell has won three Formula One Grands Prix across six seasons.",
       "slug": "russell",
+      "team_slug": "mercedes",
       "number": 63
     },
     {
@@ -126,6 +133,7 @@
       "points": 0,
       "biography": "Andrea Kimi Antonelli (born 25 August 2006), also known as Kimi Antonelli, is an Italian racing driver, who most recently competed in the FIA Formula 2 Championship for Prema. He is set to make his Formula 1 debut for Mercedes in 2025.",
       "slug": "antonelli",
+      "team_slug": "mercedes",
       "number": 12
     },
     {
@@ -142,6 +150,7 @@
       "points": 2337,
       "biography": "Fernando Alonso Díaz (born 29 July 1981) is a Spanish racing driver, who competes in Formula One for Aston Martin. Alonso has won two Formula One World Drivers' Championship titles, which he won in 2005 and 2006 with Renault, and has won 32 Grands Prix across 21 seasons.",
       "slug": "alonso",
+      "team_slug": "aston",
       "number": 14
     },
     {
@@ -158,6 +167,7 @@
       "points": 292,
       "biography": "Lance Strulovitch (born 29 October 1998), commonly known as Lance Stroll, is a Canadian racing driver, who competes in Formula One for Aston Martin. Born and raised in Montreal, Stroll is the son of billionaire businessman Lawrence Stroll, owner of the Aston Martin F1 Team.",
       "slug": "stroll",
+      "team_slug": "aston",
       "number": 18
     },
     {
@@ -174,6 +184,7 @@
       "points": 436,
       "biography": "Pierre Jean-Jacques Gasly (born 7 February 1996) is a French racing driver, who competes in Formula One for Alpine. Gasly won the 2020 Italian Grand Prix with AlphaTauri.",
       "slug": "gasly",
+      "team_slug": "alpine",
       "number": 10
     },
     {
@@ -190,6 +201,7 @@
       "points": 0,
       "biography": "Jack Doohan (born 20 January 2003) is an Australian racing driver, who competes in Formula One for Alpine. Born and raised in Gold Coast, Queensland, Doohan is the son of five-time Grand Prix motorcycle World Champion Mick Doohan.",
       "slug": "doohan",
+      "team_slug": "alpine",
       "number": 7
     },
     {
@@ -206,6 +218,7 @@
       "points": 445,
       "biography": "Esteban José Jean-Pierre Ocon-Khelfane (born 17 September 1996) is a French racing driver, who most recently competed in Formula One for Alpine. Ocon won the 2021 Hungarian Grand Prix with Alpine.",
       "slug": "ocon",
+      "team_slug": "haas",
       "number": 31
     },
     {
@@ -222,6 +235,7 @@
       "points": 7,
       "biography": "Oliver James Bearman (born 8 May 2005) is a British racing driver, who most recently competed in the FIA Formula 2 Championship for Prema and serves as a reserve driver in Formula One for Ferrari and Haas. Bearman competed in Formula One at three Grands Prix in 2024.",
       "slug": "bearman",
+      "team_slug": "haas",
       "number": 87
     },
     {
@@ -238,6 +252,7 @@
       "points": 91,
       "biography": "Yuki Tsunoda (born 11 May 2000) is a Japanese racing driver, who competes in Formula One for RB.",
       "slug": "tsunoda",
+      "team_slug": "racing_bulls",
       "number": 22
     },
     {
@@ -254,6 +269,7 @@
       "points": 0,
       "biography": "Isack Alexandre Hadjar (born 28 September 2004) is a French and Algerian racing driver, who most recently competed in the FIA Formula 2 Championship for Campos and is set to debut in Formula 1 with RB.",
       "slug": "hadjar",
+      "team_slug": "racing_bulls",
       "number": 6
     },
     {
@@ -270,6 +286,7 @@
       "points": 1272.5,
       "biography": "Carlos Sainz Vázquez de Castro (born 1 September 1994) is a Spanish racing driver, who most recently competed in Formula One for Ferrari. He is set to compete for Williams next season. Sainz has won four Formula One Grands Prix across 10 seasons.",
       "slug": "sainz",
+      "team_slug": "williams",
       "number": 55
     },
     {
@@ -286,6 +303,7 @@
       "points": 240,
       "biography": "Alexander Albon Ansusinha (born 23 March 1996) is a Thai and British racing driver, who competes under the Thai flag in Formula One for Williams.",
       "slug": "albon",
+      "team_slug": "williams",
       "number": 23
     },
     {
@@ -302,6 +320,7 @@
       "points": 571,
       "biography": "Nicolas Hülkenberg (born 19 August 1987) is a German racing driver, who most recently competed in Formula One for Haas. He is set to compete for Sauber in 2025. In endurance racing, Hülkenberg won the 24 Hours of Le Mans in 2015 with Porsche.",
       "slug": "hulkenberg",
+      "team_slug": "sauber",
       "number": 27
     },
     {
@@ -318,6 +337,7 @@
       "points": 0,
       "biography": "Gabriel Bortoleto Oliveira (born 14 October 2004) is a Brazilian racing driver, who most recently competed in the FIA Formula 2 Championship for Invicta. He has won the F2 Championship and is set to compete in F1 with Sauber.",
       "slug": "bortoleto",
+      "team_slug": "sauber",
       "number": 5
     }
   ]

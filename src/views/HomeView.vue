@@ -2,16 +2,22 @@
 import { defineComponent } from 'vue'
 import ArticleBig from '@/components/ArticleBig.vue'
 import ArticleSmall from '@/components/ArticleSmall.vue'
-import BigArticles from '../data/big_articles.json'
-import SmallArticles from '../data/small_articles.json'
+import Articles from '../data/articles.json'
 
 export default defineComponent({
   name: 'HomeView',
   components: { ArticleBig, ArticleSmall },
   data() {
     return {
-      big_articles: BigArticles.articles,
-      small_articles: SmallArticles.articles,
+      articles: Articles.articles,
+    }
+  },
+  computed: {
+    smallArticles() {
+      return this.articles.filter(article => article.size === 'small')
+    },
+    bigArticles() {
+      return this.articles.filter(article => article.size === 'big')
     }
   }
 })
@@ -20,19 +26,26 @@ export default defineComponent({
 <template>
   <main>
     <div
-      v-for="article in big_articles"
+      v-for="article in bigArticles"
       :key="article.id"
-      :class="'flex items-center justify-center mt-32'"
+      class="flex flex-col items-center"
     >
-      <ArticleBig :data="article"/>
+      <div
+        v-if="article.size == 'big'"
+        class="min-w-80 w-6/12 max-w-3xl mt-32"
+      >
+        <ArticleBig :data="article" />
+      </div>
     </div>
     <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-x-60 gap-y-10 place-items-center mt-6 max-w-screen-sm mx-auto">
-      <div
-        v-for="article in small_articles"
-        :key="article.id"
-      >
-        <ArticleSmall :data="article"/>
-      </div>
+        <div
+          v-for="article in smallArticles"
+          :key="article.id"
+        >
+         <div v-if="article.size == 'small'">
+           <ArticleSmall :data="article"/>
+         </div>
+        </div>
     </div>
   </main>
 </template>

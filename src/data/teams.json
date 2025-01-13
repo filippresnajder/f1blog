@@ -11,7 +11,8 @@
       "podiums": 524,
       "points": 6957.5,
       "ly_pos": "1st",
-      "image": "mclaren.jpg"
+      "image": "mclaren.jpg",
+      "slug": "mclaren"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "podiums": 824,
       "points": 10324,
       "ly_pos": "2nd",
-      "image": "ferrari.jpg"
+      "image": "ferrari.jpg",
+      "slug": "ferrari"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "podiums": 282,
       "points": 7837,
       "ly_pos": "3rd",
-      "image": "redbull.jpg"
+      "image": "redbull.jpg",
+      "slug": "red_bull"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "podiums": 298,
       "points": 7690.5,
       "ly_pos": "4th",
-      "image": "mercedes.jpg"
+      "image": "mercedes.jpg",
+      "slug": "mercedes"
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "podiums": 9,
       "points": 506,
       "ly_pos": "5th",
-      "image": "aston.jpg"
+      "image": "aston.jpg",
+      "slug": "aston"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "podiums": 6,
       "points": 513,
       "ly_pos": "6th",
-      "image": "alpine.jpg"
+      "image": "alpine.jpg",
+      "slug": "alpine"
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "podiums": 0,
       "points": 307,
       "ly_pos": "7th",
-      "image": "haas.jpg"
+      "image": "haas.jpg",
+      "slug": "haas"
     },
     {
       "id": 8,
@@ -102,7 +109,8 @@
       "podiums": 0,
       "points": 46,
       "ly_pos": "8th",
-      "image": "racingbulls.jpg"
+      "image": "racingbulls.jpg",
+      "slug": "racing_bulls"
     },
     {
       "id": 9,
@@ -115,7 +123,8 @@
       "podiums": 313,
       "points": 3631,
       "ly_pos": "9th",
-      "image": "williams.jpg"
+      "image": "williams.jpg",
+      "slug": "williams"
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "podiums": 27,
       "points": 865,
       "ly_pos": "10th",
-      "image": "sauber.jpg"
+      "image": "sauber.jpg",
+      "slug": "sauber"
     }
   ]
 }

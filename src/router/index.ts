@@ -7,6 +7,7 @@ import DriverView from '@/views/DriverView.vue'
 import TrackView from '@/views/TrackView.vue'
 import ArticleView from '@/views/ArticleView.vue'
 import NotFound from '@/views/NotFound.vue'
+import TeamDriversView from "@/views/TeamDriversView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,13 @@ const router = createRouter({
       name: 'teams',
       meta: { title: 'Teams' },
       component: TeamView,
+    },
+    {
+      path: '/teams/:slug',
+      name: 'team_drivers',
+      meta: { title: 'Team Drivers' },
+      component: TeamDriversView,
+      props: true
     },
     {
       path: '/calendar',

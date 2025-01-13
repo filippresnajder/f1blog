@@ -17,6 +17,6 @@ export const useDriverStore = defineStore({
           break;
         }
       }
-    }
+    },
   }
 })
